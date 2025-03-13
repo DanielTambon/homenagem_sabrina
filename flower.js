@@ -60,11 +60,11 @@ var tl = gsap
   .timeline()
   .set("#Footer_group_1_", { autoAlpha: 1 })
   .fromTo(
-    ["#Stem16_1_", "#Stem1_1_"],
-    { drawSVG: "0% 0%" },
-    { duration: 1.5, drawSVG: "0% 100%" },
-    "start"
-  )
+    strokesLeftBottom,
+    { opacity: 0, scale: 0.8 },
+    { opacity: 1, scale: 1, duration: 2, stagger: 1 },
+    1
+  ) 
   .fromTo(
     "#BaseGroup16_1_ path",
     { autoAlpha: 1, scale: 0, transformOrigin: "-10% 130%" },
@@ -92,11 +92,12 @@ var tl = gsap
     "flower1-=0.55"
   )
   .fromTo(
-    ["#Stem9_1_", "#Stem25_1_"],
-    { drawSVG: "0% 0%", autoAlpha: 1 },
-    { duration: 2, drawSVG: "0% 100%" },
-    "flower1+=0.5"
+    strokesLeftBottom,
+    { opacity: 0, scale: 0.8 },
+    { opacity: 1, scale: 1, duration: 2, stagger: 1 },
+    1
   )
+ 
   .fromTo(
     "#BaseGroup9_1_ path",
     { autoAlpha: 1, scale: 0, transformOrigin: "-10% 130%" },
@@ -267,28 +268,31 @@ var tl = gsap
   //strokes
   .fromTo(
     strokesLeftBottom,
-    stemVarsFrom,
-    { drawSVG: "0% 100%", duration: 2, stagger: 1 },
+    { opacity: 0, scale: 0.8 },
+    { opacity: 1, scale: 1, duration: 2, stagger: 1 },
     1
-  )
-  .fromTo(
-    strokesRightBottom,
-    stemVarsFrom,
-    { drawSVG: "0% 100%", duration: 2, stagger: 1 },
-    1
-  )
-  .fromTo(
-    strokesLeftTop,
-    stemVarsFrom,
-    { drawSVG: "0% 100%", duration: 2, stagger: 1 },
-    "flower1+=0.5"
-  )
-  .fromTo(
-    strokesRightTop,
-    stemVarsFrom,
-    { drawSVG: "0% 100%", duration: 2, stagger: 1 },
-    "flower1+=0.5"
-  )
+)
+.fromTo(
+  strokesLeftBottom,
+  { opacity: 0, scale: 0.8 },
+  { opacity: 1, scale: 1, duration: 2, stagger: 1 },
+  1
+)
+
+.fromTo(
+  strokesLeftBottom,
+  { opacity: 0, scale: 0.8 },
+  { opacity: 1, scale: 1, duration: 2, stagger: 1 },
+  1
+)
+
+.fromTo(
+  strokesLeftBottom,
+  { opacity: 0, scale: 0.8 },
+  { opacity: 1, scale: 1, duration: 2, stagger: 1 },
+  1
+)
+
 
   //dots
   .fromTo(
