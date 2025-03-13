@@ -37,8 +37,6 @@ var stemGroup3 = ["#Stem10_1_", "#Stem11_1_", "#Stem12a_1_", "#Stem12b_1_"];
 var stemGroup4 = ["#Stem26_1_", "#Stem27_1_", "#Stem28a_1_", "#Stem28b_1_"];
 var stemGroup5 = ["#Stem13a_1_", "#Stem13b_1_", "#Stem13c_1_"];
 var stemGroup6 = ["#Stem29a_1_", "#Stem29b_1_", "#Stem29c_1_"];
-var stemVarsFrom = { drawSVG: "0% 0%", autoAlpha: 1 };
-var stemVarsTo = { drawSVG: "0% 100%", duration: 2, stagger: 0.5 };
 
 var leafGroup1 = ["#Leaf2_1_", "#Leaf17_1_"];
 var leafGroup2 = ["#Leaf4_1_", "#Leaf5a_1_", "#Leaf5b_1_"];
