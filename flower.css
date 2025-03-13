@@ -1,0 +1,90 @@
+body {
+  background: #131b21;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+svg#flower-frame {
+  height: 90vh;
+  width: 100%;
+}
+
+#Footer_group_1_,
+[id^="PinkFlowerGroup"],
+[id^="BaseGroup"] path,
+[id^="LeafGroup"] path,
+path[id^="Stroke"],
+g[id^="BudGroup"] g[id^="BudGroup"] g[id^="Bud"],
+#Bud8_1_,
+#Bud10_1_,
+#Bud23_1_,
+#Bud26_1_,
+[id^="Dots"],
+[id^="Flourish"] {
+  visibility: hidden;
+}
+.special-message {
+  width: 50%;
+  margin: 50px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Degradê suave inspirado nas flores */
+  border-radius: 20px; /* Cantos mais arredondados */
+  text-align: center;
+  color: #fff;
+  font-family: "Arial", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.6;
+  position: relative;
+  z-index: 10;
+  border: 5px solid #ff9a9e; /* Moldura suave rosa claro */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+}
+
+.special-message h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #ffffff; /* Cor do título, inspirado nas flores */
+}
+
+.special-message p {
+  margin-bottom: 15px;
+  color: #f9f9f9; /* Texto mais claro */
+}
+
+/* Efeito de foco quando o usuário passa o mouse */
+.special-message:hover {
+  transform: scale(1.05); /* Aumenta um pouco quando passar o mouse */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Sombra mais forte ao passar o mouse */
+  background: linear-gradient(135deg, #fad0c4, #ff9a9e); /* Inverte a ordem do degradê para efeito visual */
+}
+
+
+.photo-frame {
+  width: 300px; /* Ajuste conforme necessário */
+  height: 400px;
+  margin: 20px auto;
+  padding: 10px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Degrade fofo */
+  border-radius: 15px; /* Cantos arredondados */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 5px solid white;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.photo-frame img:hover {
+  transform: scale(1.05);
+}
